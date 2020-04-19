@@ -14,7 +14,7 @@
 
 
 function armstrongNumber(){
-    let hundereds, tens, digits,calculation
+    let hundreds, tens, digits,calculation
 
     for(let number = 0; number < 1000; number++){
         if(number >= 0 && number < 10){
@@ -30,11 +30,11 @@ function armstrongNumber(){
             }
     
         } else {
-            hundereds = Math.floor((number/100))
+            hundreds = Math.floor((number/100))
             tens = Math.floor(((number % 100)/10))
             digits = number % 10
             
-            calculation = Math.pow(hundereds,3)+Math.pow(tens,3)+Math.pow(digits,3)
+            calculation = Math.pow(hundreds,3)+Math.pow(tens,3)+Math.pow(digits,3)
 
             if(number === calculation){
                 console.log(number)
